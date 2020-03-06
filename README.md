@@ -10,6 +10,31 @@ Se utilizó un patrón de diseño Page Object Model para estructurar y organizar
 
 ![]image](https://user-images.githubusercontent.com/61878768/76095825-305cd980-5f82-11ea-9d4c-6941cb03cfa8.png)
 
+Se aplicó ATLC en todas sus etapas.
+Se crearon pasos reutilizables y genericos
+
+El modelado al estar externo al proyecto(PageObject.xlsx) es manejable para poder agregar más páginas dado caso el sitio crezca sin necesidad de crear más código dentro del proyecto en cuanto al modelado, además los objetos igualmente se encuentran en el excel por lo que no es necesario agregar más código para poder interactuar con otros elementos nuevos, en caso de que los existentes cambien, solo se actualiza desde el excel y no hace falta modificar código en cuanto a elementos.
+
+## Reportes.
+
+Se crea un reporte nativo en html para poder visualizar en el navegador los resultados(ademas de la consola de ejecución)
+Se crea un log de ejecución que se va visualizando en consola y al final se crea un archivo en: awt/log
+que se puede visualizar durante la ejecución y en el directorio log.
+
+
+Nota:
+Se debe de eliminar después de la ejecucón si no es necesario.
+
+
+## Screenshots
+
+Se crean imagenes de la ejecución en caso de necesitar visualizar y tener evidencia de las pruebas.
+Se pueden visualizar en: src/main/resources/screenShots
+
+Nota:
+Se deben de eliminar después de la ejecucón si no son necesarias.
+
+
 
 
 
