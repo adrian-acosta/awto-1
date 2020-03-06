@@ -31,6 +31,11 @@ Se debe de eliminar después de la ejecucón si no es necesario.
 Se crean imagenes de la ejecución en caso de necesitar visualizar y tener evidencia de las pruebas.
 Se pueden visualizar en: src/main/resources/screenShots
 
+Se debe de modificar el archivo properpies.info el cual la ruta se debe de actualizar segun el directorio raiz dónde se coloque el proyecto.
+
+La linea de código es:
+SCREENSHOTPAHT=D:\\Proyectos\\awt\\src\\main\\resources\\screenShots
+
 Nota:
 Se deben de eliminar después de la ejecucón si no son necesarias.
 
@@ -44,5 +49,5 @@ La linea a modificar es:
         System.setProperty("webdriver.chrome.driver","D:\\Proyectos\\awt\\src\\main\\resources\\driver\\chromedriver.exe");
 
 
-
+## Ejecutable .
 
