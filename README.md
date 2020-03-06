@@ -93,3 +93,15 @@ Para descargar autoit: https://www.autoitscript.com/site/autoit/downloads/
 
 cualquier duda favor de mandar mail a jesus.acosta.solis@gmail.com
 
+## Ejecución del Script
+
+Para que pueda ser ejecutado sin problema el tc_001_RegistrarNuevoUsuario.feature se debe de cambiar el valor del correo en el paso:
+ Y El usuario captura en el campo email el valor jesus156@jesus.com por uno que no este registrado en el sistema.
+ 
+ ![paso](https://user-images.githubusercontent.com/61878768/76103324-be3ec180-5f8e-11ea-9dc4-8249e90c17aa.png)
+ 
+ 
+ 
+ El tc_002_VerificarUsuarioExistenteNoSePuedaRegistrar.feature el mismo valor es un dato de un usuario ya registrado y el objetivo es que valide que no pueda registrarse, por lo que no es necesario cambiarlo dado caso.
+
+
