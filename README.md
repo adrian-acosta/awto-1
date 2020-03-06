@@ -8,7 +8,9 @@ Awto
 
 Se utilizó un patrón de diseño Page Object Model para estructurar y organizar el sitio, el modelado se hizo externamente en el archivo Excel de nombre PageObject.xlsx el cual se encuentra en la ruta: src/main/java/resources/PageObjectModel/PageObject.xlsx
 
-https://github.com/adrian-awto/awto/issues/1#issue-576993545
+
+![alt tag](http://domain.com/path/to/img.png "Description goes here")
+[alt tag](https://github.com/adrian-awto/awto/issues/1#issue-576993545
 
 Se aplicó ATLC en todas sus etapas.
 Se crearon pasos reutilizables y genericos
