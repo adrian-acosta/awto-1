@@ -6,7 +6,15 @@ Awto
 
 ## Patron de Diseño Empleado Page Object Model.
 
-Se utilizó un patrón de diseño Page Object Model para estructurar y organizar el sitio, el modelado se hizo externamente en el archivo Excel de nombre PageObject.xlsx el cual se encuentra en la ruta: src/main/java/resources/PageObjectModel/PageObject.xlsx
+Se utilizó un patrón de diseño Page Object Model para estructurar y organizar el sitio
+
+El modelado se hizo externamente en el archivo Excel de nombre PageObject.xlsx
+
+![POM](https://user-images.githubusercontent.com/61878768/76101474-b92c4300-5f8b-11ea-8c99-3c5f2b026c57.png)
+
+el cual se encuentra en la ruta: src/main/java/resources/PageObjectModel/PageObject.xlsx
+
+![excelPage](https://user-images.githubusercontent.com/61878768/76101282-6b173f80-5f8b-11ea-8ee4-d6767d1d57bf.png)
 
 Se aplicó ATLC en todas sus etapas.
 Se crearon pasos reutilizables y genericos
@@ -16,8 +24,11 @@ El modelado al estar externo al proyecto(PageObject.xlsx) es manejable para pode
 ## Reportes.
 
 Se crea un reporte nativo en html para poder visualizar en el navegador los resultados(ademas de la consola de ejecución)
-Se crea un log de ejecución que se va visualizando en consola y al final se crea un archivo en: awt/log
-que se puede visualizar durante la ejecución y en el directorio log.
+Se crea un log de ejecución que se va visualizando en consola y al final se crea un archivo en: awt/log que se puede visualizar durante la ejecución y en el directorio log.
+
+![log](https://user-images.githubusercontent.com/61878768/76101779-348df480-5f8c-11ea-99ad-47998009cc63.png)
+
+
 
 
 Nota:
@@ -29,7 +40,12 @@ Se debe de eliminar después de la ejecucón si no es necesario.
 Se crean imagenes de la ejecución en caso de necesitar visualizar y tener evidencia de las pruebas.
 Se pueden visualizar en: src/main/resources/screenShots
 
+![screenshot](https://user-images.githubusercontent.com/61878768/76101892-5f784880-5f8c-11ea-9b53-c419053ca945.png)
+
+
 Se debe de modificar el archivo properpies.info el cual la ruta se debe de actualizar segun el directorio raiz dónde se coloque el proyecto.
+
+![properties](https://user-images.githubusercontent.com/61878768/76102012-92224100-5f8c-11ea-959d-5099e3e166e0.png)
 
 La linea de código es:
 SCREENSHOTPAHT=D:\\Proyectos\\awt\\src\\main\\resources\\screenShots
@@ -52,6 +68,10 @@ La linea a modificar es:
 Se tuvo la necesidad de utilizar autoit para automatizar el flujo de subir archivos de imagen.
 Se creó un script en autoit de nombre UploadFile.au3 el cual contiene el código para detectar la ventana de windows del explorar que se muestra al hacer click sobre el link "subir imagen"(licencias y carnet), luego se paso a compilar y crear el UploadFile.exe que es el que se manda llamar en el paso "Cargar archivo" en el caso de prueba .feature.
 
+
+
+![autoitscreen](https://user-images.githubusercontent.com/61878768/76102103-b9790e00-5f8c-11ea-8060-9de8a08b17b1.png)
+
 Código dentro del archivo UploadFile.au3:
 
 ControlFocus("Abrir","","Edit1")
@@ -67,7 +87,7 @@ Nota:
 Se tuvo que utilizar Autoit para cargar archivos ya que la clase Robot que se utiliza normalmente tenia un comportamiento inadecuado y fallaba al cargar los archivos cuando es más de uno, por lo que se busco otra opción dando lugar a autoit.
 
 
+Para descargar autoit: https://www.autoitscript.com/site/autoit/downloads/
 
-Nota:
-El scritp 
+cualquier duda favor de mandar mail a jesus.acosta.solis@gmail.com
 
