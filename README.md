@@ -28,11 +28,13 @@ Se crea un log de ejecución que se va visualizando en consola y al final se cre
 
 ![log](https://user-images.githubusercontent.com/61878768/76101779-348df480-5f8c-11ea-99ad-47998009cc63.png)
 
+![reportehtml1](https://user-images.githubusercontent.com/61878768/76102651-8a16d100-5f8d-11ea-898e-203ac4751736.png)
 
+![reportehtml](https://user-images.githubusercontent.com/61878768/76102740-b03c7100-5f8d-11ea-963c-c744e3a48ce9.png)
 
 
 Nota:
-Se debe de eliminar después de la ejecucón si no es necesario.
+Se debe de eliminar el log después de la ejecucón.
 
 
 ## Screenshots
