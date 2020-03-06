@@ -8,10 +8,6 @@ Awto
 
 Se utilizó un patrón de diseño Page Object Model para estructurar y organizar el sitio, el modelado se hizo externamente en el archivo Excel de nombre PageObject.xlsx el cual se encuentra en la ruta: src/main/java/resources/PageObjectModel/PageObject.xlsx
 
-
-
-[alt tag](https://user-images.githubusercontent.com/61878768/76095825-305cd980-5f82-11ea-9d4c-6941cb03cfa8.png)
-
 Se aplicó ATLC en todas sus etapas.
 Se crearon pasos reutilizables y genericos
 
@@ -51,5 +47,27 @@ La linea a modificar es:
         System.setProperty("webdriver.chrome.driver","D:\\Proyectos\\awt\\src\\main\\resources\\driver\\chromedriver.exe");
 
 
-## Ejecutable .
+## Archivos Autoit
+
+Se tuvo la necesidad de utilizar autoit para automatizar el flujo de subir archivos de imagen.
+Se creó un script en autoit de nombre UploadFile.au3 el cual contiene el código para detectar la ventana de windows del explorar que se muestra al hacer click sobre el link "subir imagen"(licencias y carnet), luego se paso a compilar y crear el UploadFile.exe que es el que se manda llamar en el paso "Cargar archivo" en el caso de prueba .feature.
+
+Código dentro del archivo UploadFile.au3:
+
+ControlFocus("Abrir","","Edit1")
+ControlSetText("Abrir","","Edit1","D:\Proyectos\awt\src\test\resources\images\carnetFrontal.png")
+ControlClick("Abrir","","Button1")
+
+Por lo que abria que editar el archivo a otra ruta dado caso no se encuentre la unidad D: para tener el mismo path.
+Otro punto importante a tener en cuenta es el parámetro "Abrir" ya que se utilizó el google chorome en español, éste parámetro igualmente deberia de cambiar dado caso el navegador este en inglés.
+
+Para esto es necesario tener Autoit instalado.
+
+Nota:
+Se tuvo que utilizar Autoit para cargar archivos ya que la clase Robot que se utiliza normalmente tenia un comportamiento inadecuado y fallaba al cargar los archivos cuando es más de uno, por lo que se busco otra opción dando lugar a autoit.
+
+
+
+Nota:
+El scritp 
 
