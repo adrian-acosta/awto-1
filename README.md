@@ -8,6 +8,6 @@ Awto
 
 Se utilizó un patrón de diseño Page Object Model para estructurar y organizar el sitio, el modelado se hizo externamente en el archivo Excel de nombre PageObject.xlsx el cual se encuentra en la ruta: src/main/java/resources/PageObjectModel/PageObject.xlsx
 
-![Image description](C:\Users\jesus\Pictures\excelPage.png)
+
 
 
