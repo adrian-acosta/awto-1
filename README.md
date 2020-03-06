@@ -34,6 +34,14 @@ Se pueden visualizar en: src/main/resources/screenShots
 Nota:
 Se deben de eliminar después de la ejecucón si no son necesarias.
 
+## Driver para ejecución sobre Chrome.
+
+Se agrega al proyecto el driver de ejecución, el cual la ruta se debe de actualizar segun el directorio raiz dónde se coloque el proyecto.
+
+La clase a modificar es Hooks.java la cual se encuentra en: src/main/java/stepsDefinition/Hooks.java
+
+La linea a modificar es:
+        System.setProperty("webdriver.chrome.driver","D:\\Proyectos\\awt\\src\\main\\resources\\driver\\chromedriver.exe");
 
 
 
